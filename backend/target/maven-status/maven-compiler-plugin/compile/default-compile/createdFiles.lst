@@ -1,0 +1,4 @@
+com\example\scrum\repository\TaskRepository.class
+com\example\scrum\controller\TaskController.class
+com\example\scrum\model\Task.class
+com\example\scrum\ScrumApplication.class

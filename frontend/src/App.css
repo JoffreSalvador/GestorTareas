@@ -1,0 +1,128 @@
+/* Estilo del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo principal del contenedor */
+  div.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  /* Inputs y botón */
+  .inputs {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  input,
+  button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Estilos de las columnas (pizarrón) */
+  .columns {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .column {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 300px; /* Añadido para asegurar espacio en la columna */
+  }
+  
+  .column h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Estilo de las tareas */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Añadido para separar los elementos */
+    cursor: move;
+  }
+  
+  /* Título de la tarea */
+  .task-title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Descripción de la tarea */
+  .task-description {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Botón de estado */
+  .task-status-btn {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .task-status-btn:hover {
+    background-color: #fb8c00;
+  }
+  
+  /* Estilo para el botón de eliminar */
+  .delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-top: 20px; /* Espacio entre la X y los otros botones */
+    align-self: flex-end; /* Para alinear el botón a la derecha */
+  }
+  
+  .delete-btn:hover {
+    background-color: #e60000;
+  }
+  
